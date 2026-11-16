@@ -1,0 +1,1039 @@
+{
+  "source_file": "data/horizons_1y.json",
+  "ranking_cases": [
+    {
+      "start_utc": "2026-11-14T00:00:00Z",
+      "delay_days": 0,
+      "duration_h": 336,
+      "model": "terrain",
+      "priority": "both_hours",
+      "ranking": [
+        {
+          "site_id": "MA",
+          "status": "met",
+          "both_hours": 336.0
+        },
+        {
+          "site_id": "MP",
+          "status": "met",
+          "both_hours": 327.076
+        },
+        {
+          "site_id": "HW",
+          "status": "met",
+          "both_hours": 307.166
+        },
+        {
+          "site_id": "IM2",
+          "status": "met",
+          "both_hours": 304.663
+        },
+        {
+          "site_id": "N2",
+          "status": "met",
+          "both_hours": 303.628
+        },
+        {
+          "site_id": "G2",
+          "status": "met",
+          "both_hours": 282.82
+        },
+        {
+          "site_id": "N1",
+          "status": "met",
+          "both_hours": 277.479
+        },
+        {
+          "site_id": "CR1",
+          "status": "met",
+          "both_hours": 275.093
+        },
+        {
+          "site_id": "MM",
+          "status": "not_met",
+          "both_hours": 263.221
+        },
+        {
+          "site_id": "SP",
+          "status": "not_met",
+          "both_hours": 229.541
+        },
+        {
+          "site_id": "CB",
+          "status": "not_met",
+          "both_hours": 225.144
+        }
+      ]
+    },
+    {
+      "start_utc": "2026-11-14T00:00:00Z",
+      "delay_days": 7,
+      "duration_h": 336,
+      "model": "terrain",
+      "priority": "both_hours",
+      "ranking": [
+        {
+          "site_id": "MA",
+          "status": "met",
+          "both_hours": 334.515
+        },
+        {
+          "site_id": "MP",
+          "status": "met",
+          "both_hours": 309.412
+        },
+        {
+          "site_id": "HW",
+          "status": "met",
+          "both_hours": 301.173
+        },
+        {
+          "site_id": "CB",
+          "status": "met",
+          "both_hours": 288.32
+        },
+        {
+          "site_id": "MM",
+          "status": "not_met",
+          "both_hours": 254.309
+        },
+        {
+          "site_id": "N1",
+          "status": "not_met",
+          "both_hours": 251.608
+        },
+        {
+          "site_id": "IM2",
+          "status": "not_met",
+          "both_hours": 236.476
+        },
+        {
+          "site_id": "G2",
+          "status": "not_met",
+          "both_hours": 236.134
+        },
+        {
+          "site_id": "CR1",
+          "status": "not_met",
+          "both_hours": 222.164
+        },
+        {
+          "site_id": "SP",
+          "status": "not_met",
+          "both_hours": 159.958
+        },
+        {
+          "site_id": "N2",
+          "status": "not_met",
+          "both_hours": 135.628
+        }
+      ]
+    },
+    {
+      "start_utc": "2027-04-01T00:00:00Z",
+      "delay_days": 0,
+      "duration_h": 336,
+      "model": "terrain",
+      "priority": "both_hours",
+      "ranking": [
+        {
+          "site_id": "SP",
+          "status": "met",
+          "both_hours": 286.715
+        },
+        {
+          "site_id": "N1",
+          "status": "not_met",
+          "both_hours": 201.949
+        },
+        {
+          "site_id": "CR1",
+          "status": "not_met",
+          "both_hours": 174.481
+        },
+        {
+          "site_id": "N2",
+          "status": "not_met",
+          "both_hours": 151.236
+        },
+        {
+          "site_id": "G2",
+          "status": "not_met",
+          "both_hours": 146.015
+        },
+        {
+          "site_id": "CB",
+          "status": "not_met",
+          "both_hours": 99.908
+        },
+        {
+          "site_id": "MA",
+          "status": "not_met",
+          "both_hours": 71.118
+        },
+        {
+          "site_id": "HW",
+          "status": "not_met",
+          "both_hours": 61.754
+        },
+        {
+          "site_id": "MM",
+          "status": "not_met",
+          "both_hours": 42.463
+        },
+        {
+          "site_id": "IM2",
+          "status": "not_met",
+          "both_hours": 34.258
+        },
+        {
+          "site_id": "MP",
+          "status": "not_met",
+          "both_hours": 12.324
+        }
+      ]
+    },
+    {
+      "start_utc": "2027-04-01T00:00:00Z",
+      "delay_days": 7,
+      "duration_h": 336,
+      "model": "terrain",
+      "priority": "both_hours",
+      "ranking": [
+        {
+          "site_id": "N2",
+          "status": "not_met",
+          "both_hours": 243.927
+        },
+        {
+          "site_id": "N1",
+          "status": "not_met",
+          "both_hours": 209.687
+        },
+        {
+          "site_id": "SP",
+          "status": "not_met",
+          "both_hours": 167.424
+        },
+        {
+          "site_id": "IM2",
+          "status": "not_met",
+          "both_hours": 150.873
+        },
+        {
+          "site_id": "MA",
+          "status": "not_met",
+          "both_hours": 132.406
+        },
+        {
+          "site_id": "MP",
+          "status": "not_met",
+          "both_hours": 111.96
+        },
+        {
+          "site_id": "MM",
+          "status": "not_met",
+          "both_hours": 83.611
+        },
+        {
+          "site_id": "HW",
+          "status": "not_met",
+          "both_hours": 25.231
+        },
+        {
+          "site_id": "CR1",
+          "status": "not_met",
+          "both_hours": 24.071
+        },
+        {
+          "site_id": "G2",
+          "status": "not_met",
+          "both_hours": 0.0
+        },
+        {
+          "site_id": "CB",
+          "status": "not_met",
+          "both_hours": 0.0
+        }
+      ]
+    }
+  ],
+  "generated_by": "tools/make_reference_1y.py",
+  "cases": [
+    {
+      "site_id": "IM2",
+      "start_utc": "2026-11-14T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 336.0,
+        "fraction": 1.0,
+        "longest_gap_h": 0.0,
+        "gap_touches_start": false,
+        "gap_touches_end": false
+      },
+      "earth": {
+        "hours": 332.15,
+        "fraction": 0.989,
+        "longest_gap_h": 3.85,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "both": {
+        "hours": 332.15,
+        "fraction": 0.989,
+        "longest_gap_h": 3.85,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "both_fraction": 0.989
+    },
+    {
+      "site_id": "IM2",
+      "start_utc": "2026-11-21T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 234.533,
+        "fraction": 0.698,
+        "longest_gap_h": 101.467,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "earth": {
+        "hours": 297.783,
+        "fraction": 0.886,
+        "longest_gap_h": 38.217,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "both": {
+        "hours": 234.533,
+        "fraction": 0.698,
+        "longest_gap_h": 101.467,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "both_fraction": 0.698
+    },
+    {
+      "site_id": "CR1",
+      "start_utc": "2026-11-14T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 336.0,
+        "fraction": 1.0,
+        "longest_gap_h": 0.0,
+        "gap_touches_start": false,
+        "gap_touches_end": false
+      },
+      "earth": {
+        "hours": 241.136,
+        "fraction": 0.718,
+        "longest_gap_h": 94.864,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "both": {
+        "hours": 241.136,
+        "fraction": 0.718,
+        "longest_gap_h": 94.864,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "both_fraction": 0.718
+    },
+    {
+      "site_id": "CR1",
+      "start_utc": "2027-04-01T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 0.0,
+        "fraction": 0.0,
+        "longest_gap_h": 336.0,
+        "gap_touches_start": true,
+        "gap_touches_end": true
+      },
+      "earth": {
+        "hours": 291.169,
+        "fraction": 0.867,
+        "longest_gap_h": 44.831,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "both": {
+        "hours": 0.0,
+        "fraction": 0.0,
+        "longest_gap_h": 336.0,
+        "gap_touches_start": true,
+        "gap_touches_end": true
+      },
+      "both_fraction": 0.0
+    },
+    {
+      "site_id": "CH3",
+      "start_utc": "2026-11-14T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 335.691,
+        "fraction": 0.999,
+        "longest_gap_h": 0.309,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "earth": {
+        "hours": 336.0,
+        "fraction": 1.0,
+        "longest_gap_h": 0.0,
+        "gap_touches_start": false,
+        "gap_touches_end": false
+      },
+      "both": {
+        "hours": 335.691,
+        "fraction": 0.999,
+        "longest_gap_h": 0.309,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "both_fraction": 0.999
+    },
+    {
+      "site_id": "CE4",
+      "start_utc": "2026-11-14T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 80.02,
+        "fraction": 0.238,
+        "longest_gap_h": 255.98,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "earth": {
+        "hours": 0.0,
+        "fraction": 0.0,
+        "longest_gap_h": 336.0,
+        "gap_touches_start": true,
+        "gap_touches_end": true
+      },
+      "both": {
+        "hours": 0.0,
+        "fraction": 0.0,
+        "longest_gap_h": 336.0,
+        "gap_touches_start": true,
+        "gap_touches_end": true
+      },
+      "both_fraction": 0.0
+    },
+    {
+      "site_id": "A11",
+      "start_utc": "2026-11-14T00:00:00Z",
+      "duration_h": 708,
+      "status": "ok",
+      "sun": {
+        "hours": 355.563,
+        "fraction": 0.502,
+        "longest_gap_h": 326.512,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "earth": {
+        "hours": 708.0,
+        "fraction": 1.0,
+        "longest_gap_h": 0.0,
+        "gap_touches_start": false,
+        "gap_touches_end": false
+      },
+      "both": {
+        "hours": 355.563,
+        "fraction": 0.502,
+        "longest_gap_h": 326.512,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "both_fraction": 0.502
+    },
+    {
+      "site_id": "IM2",
+      "start_utc": "2027-11-10T00:00:00Z",
+      "duration_h": 336,
+      "status": "insufficient_data"
+    }
+  ],
+  "terrain_cases": [
+    {
+      "site_id": "CR1",
+      "model": "terrain",
+      "start_utc": "2026-11-14T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 336.0,
+        "fraction": 1.0,
+        "longest_gap_h": 0.0,
+        "gap_touches_start": false,
+        "gap_touches_end": false
+      },
+      "earth": {
+        "hours": 275.093,
+        "fraction": 0.819,
+        "longest_gap_h": 60.907,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "both": {
+        "hours": 275.093,
+        "fraction": 0.819,
+        "longest_gap_h": 60.907,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "both_fraction": 0.819,
+      "sun_at_start": {
+        "azimuth_deg": 263.773,
+        "elevation_deg": 1.496,
+        "horizon_deg": -1.337,
+        "visible": true
+      },
+      "earth_at_start": {
+        "azimuth_deg": 135.911,
+        "elevation_deg": -5.051,
+        "horizon_deg": -1.41,
+        "visible": false
+      }
+    },
+    {
+      "site_id": "CR1",
+      "model": "terrain",
+      "start_utc": "2027-04-01T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 192.071,
+        "fraction": 0.572,
+        "longest_gap_h": 143.929,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "earth": {
+        "hours": 318.41,
+        "fraction": 0.948,
+        "longest_gap_h": 17.59,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "both": {
+        "hours": 174.481,
+        "fraction": 0.519,
+        "longest_gap_h": 143.929,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "both_fraction": 0.519,
+      "sun_at_start": {
+        "azimuth_deg": 25.068,
+        "elevation_deg": -0.74,
+        "horizon_deg": -1.439,
+        "visible": true
+      },
+      "earth_at_start": {
+        "azimuth_deg": 136.23,
+        "elevation_deg": -2.595,
+        "horizon_deg": -1.353,
+        "visible": false
+      }
+    },
+    {
+      "site_id": "CR1",
+      "model": "terrain",
+      "start_utc": "2027-04-08T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 34.178,
+        "fraction": 0.102,
+        "longest_gap_h": 269.361,
+        "gap_touches_start": false,
+        "gap_touches_end": false
+      },
+      "earth": {
+        "hours": 188.169,
+        "fraction": 0.56,
+        "longest_gap_h": 147.831,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "both": {
+        "hours": 24.071,
+        "fraction": 0.072,
+        "longest_gap_h": 311.929,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "both_fraction": 0.072,
+      "sun_at_start": {
+        "azimuth_deg": 299.571,
+        "elevation_deg": -1.035,
+        "horizon_deg": -1.382,
+        "visible": true
+      },
+      "earth_at_start": {
+        "azimuth_deg": 132.132,
+        "elevation_deg": 5.64,
+        "horizon_deg": -2.008,
+        "visible": true
+      }
+    },
+    {
+      "site_id": "CR1",
+      "model": "terrain",
+      "start_utc": "2027-11-10T00:00:00Z",
+      "duration_h": 336,
+      "status": "insufficient_data"
+    },
+    {
+      "site_id": "IM2",
+      "model": "terrain",
+      "start_utc": "2026-11-14T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 304.663,
+        "fraction": 0.907,
+        "longest_gap_h": 30.295,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "earth": {
+        "hours": 336.0,
+        "fraction": 1.0,
+        "longest_gap_h": 0.0,
+        "gap_touches_start": false,
+        "gap_touches_end": false
+      },
+      "both": {
+        "hours": 304.663,
+        "fraction": 0.907,
+        "longest_gap_h": 30.295,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "both_fraction": 0.907,
+      "sun_at_start": {
+        "azimuth_deg": 97.532,
+        "elevation_deg": 0.878,
+        "horizon_deg": 3.297,
+        "visible": false
+      },
+      "earth_at_start": {
+        "azimuth_deg": 329.676,
+        "elevation_deg": -0.154,
+        "horizon_deg": -1.424,
+        "visible": true
+      }
+    },
+    {
+      "site_id": "IM2",
+      "model": "terrain",
+      "start_utc": "2026-11-21T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 236.476,
+        "fraction": 0.704,
+        "longest_gap_h": 99.524,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "earth": {
+        "hours": 320.477,
+        "fraction": 0.954,
+        "longest_gap_h": 15.523,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "both": {
+        "hours": 236.476,
+        "fraction": 0.704,
+        "longest_gap_h": 99.524,
+        "gap_touches_start": false,
+        "gap_touches_end": true
+      },
+      "both_fraction": 0.704,
+      "sun_at_start": {
+        "azimuth_deg": 12.334,
+        "elevation_deg": 6.631,
+        "horizon_deg": 0.073,
+        "visible": true
+      },
+      "earth_at_start": {
+        "azimuth_deg": 323.376,
+        "elevation_deg": 8.562,
+        "horizon_deg": -1.131,
+        "visible": true
+      }
+    },
+    {
+      "site_id": "IM2",
+      "model": "terrain",
+      "start_utc": "2027-04-01T00:00:00Z",
+      "duration_h": 336,
+      "status": "ok",
+      "sun": {
+        "hours": 34.258,
+        "fraction": 0.102,
+        "longest_gap_h": 301.742,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "earth": {
+        "hours": 336.0,
+        "fraction": 1.0,
+        "longest_gap_h": 0.0,
+        "gap_touches_start": false,
+        "gap_touches_end": false
+      },
+      "both": {
+        "hours": 34.258,
+        "fraction": 0.102,
+        "longest_gap_h": 301.742,
+        "gap_touches_start": true,
+        "gap_touches_end": false
+      },
+      "both_fraction": 0.102,
+      "sun_at_start": {
+        "azimuth_deg": 218.894,
+        "elevation_deg": -5.308,
+        "horizon_deg": 1.626,
+        "visible": false
+      },
+      "earth_at_start": {
+        "azimuth_deg": 329.864,
+        "elevation_deg": 2.316,
+        "horizon_deg": -1.421,
+        "visible": true
+      }
+    }
+  ],
+  "requirements_file": "data/requirements_default.json",
+  "requirement_cases": [
+    {
+      "site_id": "IM2",
+      "model": "terrain",
+      "start_utc": "2026-11-14T00:00:00Z",
+      "duration_h": 336,
+      "status": "met",
+      "checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "met",
+          "value": 30.295,
+          "text": "Met. Longest period without the Sun: 30.3 h (limit <= 48.0 h)."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "met",
+          "value": 0.0,
+          "text": "Met. Longest period without Earth: 0.0 h (limit <= 72.0 h)."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "met",
+          "value": 0.907,
+          "text": "Met. Share of the mission with Sun and Earth both visible: 91% (limit >= 60%)."
+        }
+      ],
+      "delayed_7d_status": "not_met",
+      "delayed_7d_checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "not_met",
+          "value": 99.524,
+          "text": "Not met. Longest period without the Sun: 99.5 h, above the 48.0 h limit."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "met",
+          "value": 15.523,
+          "text": "Met. Longest period without Earth: 15.5 h (limit <= 72.0 h)."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "met",
+          "value": 0.704,
+          "text": "Met. Share of the mission with Sun and Earth both visible: 70% (limit >= 60%)."
+        }
+      ],
+      "delay_changes": [
+        "Delaying the landing by 7 days: Longest period without the Sun went from 30.3 h to 99.5 h (now not met).",
+        "Delaying the landing by 7 days: Longest period without Earth went from 0.0 h to 15.5 h.",
+        "Delaying the landing by 7 days: Share of the mission with Sun and Earth both visible went from 91% to 70%."
+      ]
+    },
+    {
+      "site_id": "IM2",
+      "model": "reference",
+      "start_utc": "2026-11-14T00:00:00Z",
+      "duration_h": 336,
+      "status": "met",
+      "checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "met",
+          "value": 0.0,
+          "text": "Met. Longest period without the Sun: 0.0 h (limit <= 48.0 h)."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "met",
+          "value": 3.851,
+          "text": "Met. Longest period without Earth: 3.9 h (limit <= 72.0 h)."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "met",
+          "value": 0.989,
+          "text": "Met. Share of the mission with Sun and Earth both visible: 99% (limit >= 60%)."
+        }
+      ],
+      "delayed_7d_status": "not_met",
+      "delayed_7d_checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "not_met",
+          "value": 101.463,
+          "text": "Not met. Longest period without the Sun: 101.5 h, above the 48.0 h limit."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "met",
+          "value": 38.213,
+          "text": "Met. Longest period without Earth: 38.2 h (limit <= 72.0 h)."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "met",
+          "value": 0.698,
+          "text": "Met. Share of the mission with Sun and Earth both visible: 70% (limit >= 60%)."
+        }
+      ],
+      "delay_changes": [
+        "Delaying the landing by 7 days: Longest period without the Sun went from 0.0 h to 101.5 h (now not met).",
+        "Delaying the landing by 7 days: Longest period without Earth went from 3.9 h to 38.2 h.",
+        "Delaying the landing by 7 days: Share of the mission with Sun and Earth both visible went from 99% to 70%."
+      ]
+    },
+    {
+      "site_id": "CR1",
+      "model": "terrain",
+      "start_utc": "2026-11-14T00:00:00Z",
+      "duration_h": 336,
+      "status": "met",
+      "checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "met",
+          "value": 0.0,
+          "text": "Met. Longest period without the Sun: 0.0 h (limit <= 48.0 h)."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "met",
+          "value": 60.907,
+          "text": "Met. Longest period without Earth: 60.9 h (limit <= 72.0 h)."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "met",
+          "value": 0.819,
+          "text": "Met. Share of the mission with Sun and Earth both visible: 82% (limit >= 60%)."
+        }
+      ],
+      "delayed_7d_status": "not_met",
+      "delayed_7d_checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "met",
+          "value": 0.0,
+          "text": "Met. Longest period without the Sun: 0.0 h (limit <= 48.0 h)."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "not_met",
+          "value": 113.836,
+          "text": "Not met. Longest period without Earth: 113.8 h, above the 72.0 h limit."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "met",
+          "value": 0.661,
+          "text": "Met. Share of the mission with Sun and Earth both visible: 66% (limit >= 60%)."
+        }
+      ],
+      "delay_changes": [
+        "Delaying the landing by 7 days: Longest period without Earth went from 60.9 h to 113.8 h (now not met).",
+        "Delaying the landing by 7 days: Share of the mission with Sun and Earth both visible went from 82% to 66%."
+      ]
+    },
+    {
+      "site_id": "CR1",
+      "model": "terrain",
+      "start_utc": "2027-04-01T00:00:00Z",
+      "duration_h": 336,
+      "status": "not_met",
+      "checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "not_met",
+          "value": 143.929,
+          "text": "Not met. Longest period without the Sun: 143.9 h, above the 48.0 h limit."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "met",
+          "value": 17.59,
+          "text": "Met. Longest period without Earth: 17.6 h (limit <= 72.0 h)."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "not_met",
+          "value": 0.519,
+          "text": "Not met. Share of the mission with Sun and Earth both visible: 52%, below the 60% limit."
+        }
+      ],
+      "delayed_7d_status": "not_met",
+      "delayed_7d_checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "not_met",
+          "value": 269.361,
+          "text": "Not met. Longest period without the Sun: 269.4 h, above the 48.0 h limit."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "not_met",
+          "value": 147.831,
+          "text": "Not met. Longest period without Earth: 147.8 h, above the 72.0 h limit."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "not_met",
+          "value": 0.072,
+          "text": "Not met. Share of the mission with Sun and Earth both visible: 7%, below the 60% limit."
+        }
+      ],
+      "delay_changes": [
+        "Delaying the landing by 7 days: Longest period without Earth went from 17.6 h to 147.8 h (now not met).",
+        "Delaying the landing by 7 days: Longest period without the Sun went from 143.9 h to 269.4 h.",
+        "Delaying the landing by 7 days: Share of the mission with Sun and Earth both visible went from 52% to 7%."
+      ]
+    },
+    {
+      "site_id": "CE4",
+      "model": "reference",
+      "start_utc": "2026-11-14T00:00:00Z",
+      "duration_h": 336,
+      "status": "not_met",
+      "checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "not_met",
+          "value": 255.981,
+          "text": "Not met. Longest period without the Sun: 256.0 h, above the 48.0 h limit."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "not_met",
+          "value": 336.0,
+          "text": "Not met. Longest period without Earth: 336.0 h, above the 72.0 h limit."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "not_met",
+          "value": 0.0,
+          "text": "Not met. Share of the mission with Sun and Earth both visible: 0%, below the 60% limit."
+        }
+      ],
+      "delayed_7d_status": "not_met",
+      "delayed_7d_checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "not_met",
+          "value": 261.679,
+          "text": "Not met. Longest period without the Sun: 261.7 h, above the 48.0 h limit."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "not_met",
+          "value": 336.0,
+          "text": "Not met. Longest period without Earth: 336.0 h, above the 72.0 h limit."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "not_met",
+          "value": 0.0,
+          "text": "Not met. Share of the mission with Sun and Earth both visible: 0%, below the 60% limit."
+        }
+      ],
+      "delay_changes": [
+        "Delaying the landing by 7 days: Longest period without the Sun went from 256.0 h to 261.7 h."
+      ]
+    },
+    {
+      "site_id": "IM2",
+      "model": "reference",
+      "start_utc": "2027-10-25T00:00:00Z",
+      "duration_h": 336,
+      "status": "not_met",
+      "checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "not_met",
+          "value": 205.234,
+          "text": "Not met. Longest period without the Sun: 205.2 h, above the 48.0 h limit."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "not_met",
+          "value": 165.511,
+          "text": "Not met. Longest period without Earth: 165.5 h, above the 72.0 h limit."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "not_met",
+          "value": 0.389,
+          "text": "Not met. Share of the mission with Sun and Earth both visible: 39%, below the 60% limit."
+        }
+      ],
+      "delayed_7d_status": "insufficient_data",
+      "delayed_7d_checks": [
+        {
+          "id": "max_gap_sun_h",
+          "status": "insufficient_data",
+          "value": null,
+          "text": "Insufficient data. Longest period without the Sun: cannot be computed for this period."
+        },
+        {
+          "id": "max_gap_earth_h",
+          "status": "insufficient_data",
+          "value": null,
+          "text": "Insufficient data. Longest period without Earth: cannot be computed for this period."
+        },
+        {
+          "id": "min_both_frac",
+          "status": "insufficient_data",
+          "value": null,
+          "text": "Insufficient data. Share of the mission with Sun and Earth both visible: cannot be computed for this period."
+        }
+      ],
+      "delay_changes": [
+        "Delaying the landing by 7 days: Longest period without the Sun cannot be computed with the available data.",
+        "Delaying the landing by 7 days: Longest period without Earth cannot be computed with the available data.",
+        "Delaying the landing by 7 days: Share of the mission with Sun and Earth both visible cannot be computed with the available data."
+      ]
+    }
+  ]
+}

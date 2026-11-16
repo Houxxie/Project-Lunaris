@@ -1,0 +1,17 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://Scenes/Fundo/fundo_espacial.tscn" id="1_fundo"]
+[ext_resource type="Script" path="res://Scripts/Local/tela_local.gd" id="2_local"]
+
+[node name="TelaLocal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_local")
+
+[node name="FundoEspacial" parent="." instance=ExtResource("1_fundo")]
+layout_mode = 1
+densidade_estrelas = 0.0025

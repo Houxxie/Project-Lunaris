@@ -1,0 +1,816 @@
+{
+  "format_version": 1,
+  "pixel_convention": "Continuous pixel coordinates: (0, 0) is the top-left corner of the image, x to the right, y down; pixel (row i, column j) is centered at (j + 0.5, i + 0.5).",
+  "formulas": {
+    "south_polar_stereographic": "rho = 2*R*tan((90 + lat)/2); x = rho*sin(lon); y = rho*cos(lon); px = (x - x_min_m)/meters_per_pixel; py = (y_max_m - y)/meters_per_pixel. Inverse: x = x_min_m + px*mpp; y = y_max_m - py*mpp; lat = -90 + 2*atan(hypot(x,y)/(2R)); lon = atan2(x, y).",
+    "equirectangular": "px = (lon + 180)/360*width; py = (90 - lat)/180*height (lon wrapped to [-180, 180))."
+  },
+  "angles": "degrees; latitude positive north; longitude positive east",
+  "regions_note": "Polar maps list the outlines of NASA's October 2024 candidate regions for the first crewed landing (USGS doi:10.5066/P1MEQ6UK) as pixel polygons; they are straight-sided in these maps. Each region's sample point is the site with the same code.",
+  "styles": "Each map comes in two styles with the same projection: 'full' (detailed grayscale) and 'pixel' (id ending in _px: small, 8-color palette, for pixel art; scale up with nearest filtering). default_map_for_site gives the base id; add '_px' for the pixel version. To snap a marker to the center of its pixel: floor(p) + 0.5.",
+  "maps": [
+    {
+      "id": "south_pole",
+      "base_id": "south_pole",
+      "style": "full",
+      "image": "assets/maps/south_pole.png",
+      "projection": "south_polar_stereographic",
+      "width": 1280,
+      "height": 1280,
+      "meters_per_pixel": 320.0,
+      "x_min_m": -204800.0,
+      "y_max_m": 204800.0,
+      "radius_m": 1737400.0,
+      "latitude_edge_deg": -83.254,
+      "content": "Shaded relief from LOLA elevation (artificial light from the upper left; not real sunlight)",
+      "source": "NASA LRO LOLA, PDS LDEM_80S_80M (LRO-L-LOLA-4-GDR-V1.0)",
+      "sites": {
+        "CR1": [
+          603.91,
+          678.93
+        ],
+        "IM2": [
+          880.96,
+          208.77
+        ],
+        "N2": [
+          1123.63,
+          352.12
+        ],
+        "MM": [
+          870.22,
+          274.22
+        ],
+        "MA": [
+          617.28,
+          256.97
+        ],
+        "G2": [
+          503.91,
+          584.72
+        ],
+        "MP": [
+          851.47,
+          267.09
+        ],
+        "SP": [
+          845.09,
+          797.91
+        ],
+        "CB": [
+          75.88,
+          418.88
+        ],
+        "N1": [
+          908.66,
+          284.59
+        ],
+        "HW": [
+          504.16,
+          323.41
+        ]
+      },
+      "regions": [
+        {
+          "code": "N2",
+          "name": "Nobile Rim 2",
+          "polygon_px": [
+            [
+              1099.37,
+              311.87
+            ],
+            [
+              1099.37,
+              374.37
+            ],
+            [
+              1161.87,
+              374.37
+            ],
+            [
+              1161.87,
+              311.87
+            ]
+          ]
+        },
+        {
+          "code": "MM",
+          "name": "Mons Mouton",
+          "polygon_px": [
+            [
+              843.12,
+              246.25
+            ],
+            [
+              843.12,
+              296.25
+            ],
+            [
+              893.12,
+              296.25
+            ],
+            [
+              893.12,
+              246.25
+            ]
+          ]
+        },
+        {
+          "code": "MA",
+          "name": "Malapert Massif",
+          "polygon_px": [
+            [
+              605.62,
+              227.5
+            ],
+            [
+              605.62,
+              293.12
+            ],
+            [
+              671.25,
+              293.12
+            ],
+            [
+              671.25,
+              227.5
+            ]
+          ]
+        },
+        {
+          "code": "G2",
+          "name": "de Gerlache Rim 2",
+          "polygon_px": [
+            [
+              457.19,
+              536.88
+            ],
+            [
+              457.19,
+              599.38
+            ],
+            [
+              519.69,
+              599.38
+            ],
+            [
+              519.69,
+              536.88
+            ]
+          ]
+        },
+        {
+          "code": "MP",
+          "name": "Mons Mouton Plateau",
+          "polygon_px": [
+            [
+              793.29,
+              87.04
+            ],
+            [
+              793.29,
+              267.96
+            ],
+            [
+              1033.59,
+              267.96
+            ],
+            [
+              1033.59,
+              87.04
+            ]
+          ]
+        },
+        {
+          "code": "SP",
+          "name": "Slater Plain",
+          "polygon_px": [
+            [
+              827.51,
+              765.01
+            ],
+            [
+              827.51,
+              827.49
+            ],
+            [
+              889.99,
+              827.49
+            ],
+            [
+              889.99,
+              765.01
+            ]
+          ]
+        },
+        {
+          "code": "CB",
+          "name": "Peak Near Cabeus B",
+          "polygon_px": [
+            [
+              46.26,
+              390.01
+            ],
+            [
+              46.26,
+              452.49
+            ],
+            [
+              108.74,
+              452.49
+            ],
+            [
+              108.74,
+              390.01
+            ]
+          ]
+        },
+        {
+          "code": "N1",
+          "name": "Nobile Rim 1",
+          "polygon_px": [
+            [
+              871.23,
+              264.78
+            ],
+            [
+              871.23,
+              327.28
+            ],
+            [
+              933.73,
+              327.28
+            ],
+            [
+              933.73,
+              264.78
+            ]
+          ]
+        },
+        {
+          "code": "HW",
+          "name": "Haworth",
+          "polygon_px": [
+            [
+              474.69,
+              310.62
+            ],
+            [
+              474.69,
+              403.75
+            ],
+            [
+              567.81,
+              403.75
+            ],
+            [
+              567.81,
+              310.62
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south_pole_zoom",
+      "base_id": "south_pole_zoom",
+      "style": "full",
+      "image": "assets/maps/south_pole_zoom.png",
+      "projection": "south_polar_stereographic",
+      "width": 1024,
+      "height": 1024,
+      "meters_per_pixel": 80.0,
+      "x_min_m": -40960.0,
+      "y_max_m": 40960.0,
+      "radius_m": 1737400.0,
+      "latitude_edge_deg": -88.649,
+      "content": "Shaded relief from LOLA elevation (artificial light from the upper left; not real sunlight)",
+      "source": "NASA LRO LOLA, PDS LDEM_875S_20M (LRO-L-LOLA-4-GDR-V1.0)",
+      "sites": {
+        "CR1": [
+          367.65,
+          667.73
+        ]
+      },
+      "regions": [
+        {
+          "code": "G2",
+          "name": "de Gerlache Rim 2",
+          "polygon_px": [
+            [
+              -219.25,
+              99.5
+            ],
+            [
+              -219.25,
+              349.5
+            ],
+            [
+              30.75,
+              349.5
+            ],
+            [
+              30.75,
+              99.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south_pole_px",
+      "base_id": "south_pole",
+      "style": "pixel",
+      "image": "assets/maps/south_pole_px.png",
+      "projection": "south_polar_stereographic",
+      "width": 256,
+      "height": 256,
+      "meters_per_pixel": 1600.0,
+      "x_min_m": -204800.0,
+      "y_max_m": 204800.0,
+      "radius_m": 1737400.0,
+      "latitude_edge_deg": -83.254,
+      "content": "Shaded relief from LOLA elevation (artificial light from the upper left; not real sunlight)",
+      "source": "NASA LRO LOLA, PDS LDEM_80S_80M (LRO-L-LOLA-4-GDR-V1.0)",
+      "palette": [
+        "#0d0f1a",
+        "#1f2433",
+        "#353b4d",
+        "#4e5566",
+        "#6b7280",
+        "#8c929c",
+        "#b3b7bd",
+        "#dcdedf"
+      ],
+      "sites": {
+        "CR1": [
+          120.78,
+          135.79
+        ],
+        "IM2": [
+          176.19,
+          41.75
+        ],
+        "N2": [
+          224.73,
+          70.42
+        ],
+        "MM": [
+          174.04,
+          54.84
+        ],
+        "MA": [
+          123.46,
+          51.39
+        ],
+        "G2": [
+          100.78,
+          116.94
+        ],
+        "MP": [
+          170.29,
+          53.42
+        ],
+        "SP": [
+          169.02,
+          159.58
+        ],
+        "CB": [
+          15.18,
+          83.78
+        ],
+        "N1": [
+          181.73,
+          56.92
+        ],
+        "HW": [
+          100.83,
+          64.68
+        ]
+      },
+      "regions": [
+        {
+          "code": "N2",
+          "name": "Nobile Rim 2",
+          "polygon_px": [
+            [
+              219.87,
+              62.37
+            ],
+            [
+              219.87,
+              74.87
+            ],
+            [
+              232.37,
+              74.87
+            ],
+            [
+              232.37,
+              62.37
+            ]
+          ]
+        },
+        {
+          "code": "MM",
+          "name": "Mons Mouton",
+          "polygon_px": [
+            [
+              168.62,
+              49.25
+            ],
+            [
+              168.62,
+              59.25
+            ],
+            [
+              178.62,
+              59.25
+            ],
+            [
+              178.62,
+              49.25
+            ]
+          ]
+        },
+        {
+          "code": "MA",
+          "name": "Malapert Massif",
+          "polygon_px": [
+            [
+              121.12,
+              45.5
+            ],
+            [
+              121.12,
+              58.62
+            ],
+            [
+              134.25,
+              58.62
+            ],
+            [
+              134.25,
+              45.5
+            ]
+          ]
+        },
+        {
+          "code": "G2",
+          "name": "de Gerlache Rim 2",
+          "polygon_px": [
+            [
+              91.44,
+              107.38
+            ],
+            [
+              91.44,
+              119.88
+            ],
+            [
+              103.94,
+              119.88
+            ],
+            [
+              103.94,
+              107.38
+            ]
+          ]
+        },
+        {
+          "code": "MP",
+          "name": "Mons Mouton Plateau",
+          "polygon_px": [
+            [
+              158.66,
+              17.41
+            ],
+            [
+              158.66,
+              53.59
+            ],
+            [
+              206.72,
+              53.59
+            ],
+            [
+              206.72,
+              17.41
+            ]
+          ]
+        },
+        {
+          "code": "SP",
+          "name": "Slater Plain",
+          "polygon_px": [
+            [
+              165.5,
+              153.0
+            ],
+            [
+              165.5,
+              165.5
+            ],
+            [
+              178.0,
+              165.5
+            ],
+            [
+              178.0,
+              153.0
+            ]
+          ]
+        },
+        {
+          "code": "CB",
+          "name": "Peak Near Cabeus B",
+          "polygon_px": [
+            [
+              9.25,
+              78.0
+            ],
+            [
+              9.25,
+              90.5
+            ],
+            [
+              21.75,
+              90.5
+            ],
+            [
+              21.75,
+              78.0
+            ]
+          ]
+        },
+        {
+          "code": "N1",
+          "name": "Nobile Rim 1",
+          "polygon_px": [
+            [
+              174.25,
+              52.96
+            ],
+            [
+              174.25,
+              65.46
+            ],
+            [
+              186.75,
+              65.46
+            ],
+            [
+              186.75,
+              52.96
+            ]
+          ]
+        },
+        {
+          "code": "HW",
+          "name": "Haworth",
+          "polygon_px": [
+            [
+              94.94,
+              62.12
+            ],
+            [
+              94.94,
+              80.75
+            ],
+            [
+              113.56,
+              80.75
+            ],
+            [
+              113.56,
+              62.12
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south_pole_zoom_px",
+      "base_id": "south_pole_zoom",
+      "style": "pixel",
+      "image": "assets/maps/south_pole_zoom_px.png",
+      "projection": "south_polar_stereographic",
+      "width": 256,
+      "height": 256,
+      "meters_per_pixel": 320.0,
+      "x_min_m": -40960.0,
+      "y_max_m": 40960.0,
+      "radius_m": 1737400.0,
+      "latitude_edge_deg": -88.649,
+      "content": "Shaded relief from LOLA elevation (artificial light from the upper left; not real sunlight)",
+      "source": "NASA LRO LOLA, PDS LDEM_875S_20M (LRO-L-LOLA-4-GDR-V1.0)",
+      "palette": [
+        "#0d0f1a",
+        "#1f2433",
+        "#353b4d",
+        "#4e5566",
+        "#6b7280",
+        "#8c929c",
+        "#b3b7bd",
+        "#dcdedf"
+      ],
+      "sites": {
+        "CR1": [
+          91.91,
+          166.93
+        ]
+      },
+      "regions": [
+        {
+          "code": "G2",
+          "name": "de Gerlache Rim 2",
+          "polygon_px": [
+            [
+              -54.81,
+              24.88
+            ],
+            [
+              -54.81,
+              87.38
+            ],
+            [
+              7.69,
+              87.38
+            ],
+            [
+              7.69,
+              24.88
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "base_id": "global",
+      "style": "full",
+      "image": "assets/maps/global.png",
+      "width": 2048,
+      "height": 1024,
+      "projection": "equirectangular",
+      "content": "LRO Wide Angle Camera global mosaic (reflectance)",
+      "source": "NASA Moon Trek, LRO_WAC_Mosaic_Global_303ppd_v02, WMTS level 2 (NASA/GSFC/Arizona State University), https://trek.nasa.gov/moon/",
+      "retrieved_utc": "2026-11-15T00:26:04Z",
+      "sites": {
+        "CR1": [
+          243.66,
+          1020.81
+        ],
+        "IM2": [
+          1190.09,
+          994.36
+        ],
+        "CH3": [
+          1207.86,
+          906.66
+        ],
+        "CE4": [
+          2034.28,
+          770.6
+        ],
+        "A11": [
+          1157.54,
+          508.17
+        ],
+        "N2": [
+          1360.99,
+          990.24
+        ],
+        "MM": [
+          1207.1,
+          998.07
+        ],
+        "MA": [
+          1004.69,
+          1000.97
+        ],
+        "G2": [
+          637.76,
+          1015.18
+        ],
+        "MP": [
+          1192.15,
+          998.28
+        ],
+        "SP": [
+          1749.87,
+          1008.46
+        ],
+        "CB": [
+          633.77,
+          987.66
+        ],
+        "N1": [
+          1234.98,
+          997.27
+        ],
+        "HW": [
+          891.89,
+          1003.32
+        ]
+      }
+    },
+    {
+      "id": "global_px",
+      "base_id": "global",
+      "style": "pixel",
+      "image": "assets/maps/global_px.png",
+      "width": 512,
+      "height": 256,
+      "projection": "equirectangular",
+      "content": "LRO Wide Angle Camera global mosaic (reflectance)",
+      "source": "NASA Moon Trek, LRO_WAC_Mosaic_Global_303ppd_v02, WMTS level 2 (NASA/GSFC/Arizona State University), https://trek.nasa.gov/moon/",
+      "retrieved_utc": "2026-11-15T00:26:04Z",
+      "palette": [
+        "#0d0f1a",
+        "#1f2433",
+        "#353b4d",
+        "#4e5566",
+        "#6b7280",
+        "#8c929c",
+        "#b3b7bd",
+        "#dcdedf"
+      ],
+      "sites": {
+        "CR1": [
+          60.91,
+          255.2
+        ],
+        "IM2": [
+          297.52,
+          248.59
+        ],
+        "CH3": [
+          301.97,
+          226.67
+        ],
+        "CE4": [
+          508.57,
+          192.65
+        ],
+        "A11": [
+          289.38,
+          127.04
+        ],
+        "N2": [
+          340.25,
+          247.56
+        ],
+        "MM": [
+          301.78,
+          249.52
+        ],
+        "MA": [
+          251.17,
+          250.24
+        ],
+        "G2": [
+          159.44,
+          253.8
+        ],
+        "MP": [
+          298.04,
+          249.57
+        ],
+        "SP": [
+          437.47,
+          252.12
+        ],
+        "CB": [
+          158.44,
+          246.92
+        ],
+        "N1": [
+          308.74,
+          249.32
+        ],
+        "HW": [
+          222.97,
+          250.83
+        ]
+      }
+    }
+  ],
+  "default_map_for_site": {
+    "CR1": "south_pole",
+    "IM2": "south_pole",
+    "CH3": "global",
+    "CE4": "global",
+    "A11": "global",
+    "N2": "south_pole",
+    "MM": "south_pole",
+    "MA": "south_pole",
+    "G2": "south_pole",
+    "MP": "south_pole",
+    "SP": "south_pole",
+    "CB": "south_pole",
+    "N1": "south_pole",
+    "HW": "south_pole"
+  },
+  "generated_by": "tools/make_maps.py"
+}

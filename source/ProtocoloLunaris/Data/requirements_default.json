@@ -1,0 +1,13 @@
+{
+  "label": "Team demonstration assumptions - not NASA criteria",
+  "description": "Example mission requirements used to classify a scenario. Every value can be changed in the interface. They are not requirements from NASA or any mission.",
+  "rules": [
+    {"id": "max_gap_sun_h", "indicator": "longest_gap_sun_h", "op": "<=", "value": 48,
+     "name": "Longest period without the Sun", "unit": "h"},
+    {"id": "max_gap_earth_h", "indicator": "longest_gap_earth_h", "op": "<=", "value": 72,
+     "name": "Longest period without Earth", "unit": "h"},
+    {"id": "min_both_frac", "indicator": "both_fraction", "op": ">=", "value": 0.6,
+     "name": "Share of the mission with Sun and Earth both visible", "unit": "%"}
+  ],
+  "priority": "both_hours"
+}

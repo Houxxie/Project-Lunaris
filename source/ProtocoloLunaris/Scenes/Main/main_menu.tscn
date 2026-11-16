@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://tycrl2v64vuo"]
+
+[ext_resource type="Script" uid="uid://dtyrlc0kq4a31" path="res://Scripts/Menus/main_menu.gd" id="1_7gkfm"]
+[ext_resource type="Texture2D" uid="uid://dt4o38ulp84p" path="res://Assets/Sprites/botoes/explore.png" id="3_explore"]
+[ext_resource type="Texture2D" uid="uid://dik8valncwtq1" path="res://Assets/Sprites/logo-protocol-lunaris.png" id="3_gsnsu"]
+[ext_resource type="Texture2D" uid="uid://7h74a8un4c2k" path="res://Assets/Sprites/botoes/quit.png" id="4_quit"]
+[ext_resource type="PackedScene" path="res://Scenes/Fundo/fundo_espacial.tscn" id="5_fundo"]
+[ext_resource type="Script" uid="uid://ca3u4oagic6xy" path="res://Scripts/Menus/logo_flutuante.gd" id="6_logo"]
+[ext_resource type="Script" uid="uid://dfyysbua0dp4v" path="res://Scripts/UI/botao_animado.gd" id="7_botao"]
+
+[node name="MainMenu" type="Control" unique_id=1942994410]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7gkfm")
+
+[node name="FundoEspacial" parent="." unique_id=2086272873 instance=ExtResource("5_fundo")]
+layout_mode = 1
+cores_estrelas = PackedColorArray(1, 1, 1, 1, 0.8392157, 0.9254902, 1, 1, 0.62352943, 0.8901961, 1, 1, 0.7647059, 0.70980394, 1, 1)
+
+[node name="BotaoNavegar" type="Button" parent="." unique_id=419125586]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -45.0
+offset_top = -57.0
+offset_right = 45.0
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 0
+icon = ExtResource("3_explore")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("7_botao")
+sem_margens = true
+
+[node name="Logotipo" type="TextureRect" parent="." unique_id=2063600640]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.0
+offset_top = -68.0
+offset_right = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_gsnsu")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("6_logo")
+
+[node name="BotaoSair" type="Button" parent="." unique_id=1138987299]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -45.0
+offset_top = -31.0
+offset_right = 45.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+icon = ExtResource("4_quit")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("7_botao")
+sem_margens = true
+
+[connection signal="acionado" from="BotaoNavegar" to="." method="_on_botao_play_pressed"]
+[connection signal="acionado" from="BotaoSair" to="." method="_on_botao_sair_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dtf6f7idqs4td"
+path="res://.godot/imported/SFX Fechando janelas de help e source e about.mp3-9552442e73b56639d96871f03d6b0880.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/SFX Fechando janelas de help e source e about.mp3"
+dest_files=["res://.godot/imported/SFX Fechando janelas de help e source e about.mp3-9552442e73b56639d96871f03d6b0880.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

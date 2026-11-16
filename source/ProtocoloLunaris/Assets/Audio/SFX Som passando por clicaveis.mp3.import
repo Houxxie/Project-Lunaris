@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dlqjsnftf8i35"
+path="res://.godot/imported/SFX Som passando por clicaveis.mp3-3cf8049a3c9b61ed4adfe3ebb9b28fc1.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/SFX Som passando por clicaveis.mp3"
+dest_files=["res://.godot/imported/SFX Som passando por clicaveis.mp3-3cf8049a3c9b61ed4adfe3ebb9b28fc1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

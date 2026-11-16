@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://b4c1y0xejnx5b"
+path="res://.godot/imported/lunaris_pixel_bold.fnt-23b4dd7de26c58a9535268dff672f2e2.fontdata"
+
+[deps]
+
+source_file="res://Assets/Fonts/lunaris_pixel_bold.fnt"
+dest_files=["res://.godot/imported/lunaris_pixel_bold.fnt-23b4dd7de26c58a9535268dff672f2e2.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

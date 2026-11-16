@@ -1,0 +1,322 @@
+{
+  "generated_by": "tools/make_texts.py",
+  "source_file": "data/horizons_1y.json",
+  "footer": "Data: NASA/JPL Horizons (DE441) and NASA LRO LOLA topography. Times in UTC. Educational decision-support tool; it does not certify landing sites.",
+  "data_retrieved_utc": "2026-11-14",
+  "coverage_utc": [
+    "2026-11-14T00:00:00Z",
+    "2027-11-14T00:00:00Z"
+  ],
+  "model_labels": {
+    "reference": "0° reference horizon, no terrain",
+    "terrain": "Terrain horizon (LOLA)",
+    "reference_note": "Meets the requirements in this model (0° horizon, no terrain). Real terrain can increase or reduce the hours.",
+    "terrain_note": "Uses the real horizon from LOLA topography, seen 2 m above the ground. Results apply to this exact point; a few meters away they can differ.",
+    "no_terrain_warning": "Terrain data is not available for this site. This does not mean the horizon is clear."
+  },
+  "status_labels": {
+    "met": "Meets the requirements",
+    "not_met": "Does not meet the requirements",
+    "insufficient_data": "Insufficient data",
+    "not_found": "Not found in this period",
+    "at_least": "at least"
+  },
+  "help": {
+    "sun_elevation": "How high the center of the Sun is above the horizon, in degrees. At the lunar south pole the Sun stays within a few degrees of the horizon, so small hills matter.",
+    "azimuth": "Compass direction: North 0°, East 90°, South 180°, West 270°.",
+    "sun_hours": "Hours in the mission when the center of the Sun is above the horizon. This is illumination availability, not generated power: there is no solar panel model.",
+    "longest_gap_sun": "Longest continuous stretch of the mission without the Sun. 'At least' means the stretch touches the start or end of the mission and may be longer.",
+    "earth_hours": "Hours in the mission when the center of Earth is above the horizon. This is geometric visibility only: it does not guarantee a radio link.",
+    "longest_gap_earth": "Longest continuous stretch of the mission without Earth in the sky.",
+    "both_hours": "Hours when the Sun and Earth are above the horizon at the same time.",
+    "next_change": "Time from the cursor until the next sunset/sunrise or Earthset/Earthrise. Hourly data: shown as ~N h, never with minutes.",
+    "requirements": "Example requirements chosen by the team. Any requirement not met makes the scenario fail; a strong indicator never compensates for a failed one.",
+    "delay": "Moves the landing date 7 days later and keeps the same duration, to see what changes.",
+    "region": "Outlined boxes are the nine candidate regions NASA chose in October 2024 for the first crewed landing. Each region is about 16 to 77 km across and conditions change a lot inside it; the app shows one sample point per region, the most illuminated one in NASA's illumination map.",
+    "map": "South pole maps: terrain from LOLA laser altimetry, shaded with an artificial light from the upper left to show its shape (not real sunlight). Global map: LRO Wide Angle Camera mosaic; dark areas are basalt plains (maria)."
+  },
+  "sources": [
+    {
+      "title": "Sun and Earth positions",
+      "text": "NASA/JPL Horizons System, DE441 ephemeris, observer on the Moon (MOON_ME frame, 1737.4 km sphere). Apparent azimuth and elevation with no atmospheric refraction (APPARENT=AIRLESS), one sample per hour. Lunar libration is included in the Horizons geometry.",
+      "url": "https://ssd.jpl.nasa.gov/horizons/"
+    },
+    {
+      "title": "Terrain (all south pole sites)",
+      "text": "LRO LOLA elevation models. Connecting Ridge: 5 m/pixel Site01 map (Barker et al. 2021, NASA/GSFC PGDA product 78) plus the PDS LDEM_875S_20M and LDEM_80S_80M polar maps. Other south pole sites: PDS LDEM_85S_20M (20 m/pixel) plus LDEM_80S_80M. The horizon is the highest terrain angle in each direction, including the Moon's curvature. Sites far from the pole use a flat 0° horizon.",
+      "url": "https://pgda.gsfc.nasa.gov/products/78"
+    },
+    {
+      "title": "Candidate landing regions",
+      "text": "Outlines of the nine regions NASA selected in October 2024 for the first crewed south pole landing (then planned as Artemis III; NASA now plans it as Artemis IV, in 2028), from the USGS data release by M. T. McClernan (2024), doi:10.5066/P1MEQ6UK, based on LROC QuickMap. In each region the app uses one sample point: the most illuminated pixel in NASA's LOLA average illumination map. It is a team choice for comparison, not a landing site.",
+      "url": "https://doi.org/10.5066/P1MEQ6UK"
+    },
+    {
+      "title": "Validation of the terrain horizon",
+      "text": "Compared with published illumination studies of the lunar south pole: Glaser et al. 2018 (Planetary and Space Science 162) for the Connecting Ridge, and the LOLA average illumination and Earth visibility maps of Mazarico et al. 2011 (Icarus 211) for every south pole site. Periods and resolutions differ, so the agreement shows consistency, not equality.",
+      "url": "https://pgda.gsfc.nasa.gov/products/69"
+    },
+    {
+      "title": "Maps and site context",
+      "text": "Global map: LRO Wide Angle Camera global mosaic served by NASA Moon Trek (NASA/GSFC/Arizona State University). South pole maps: shaded relief from the LOLA polar elevation maps. Site coordinates from LROC image releases, Glaser et al. 2018 and the NASA NSSDC Apollo site list (each site lists its own source).",
+      "url": "https://trek.nasa.gov/moon/"
+    },
+    {
+      "title": "Space agency partner context",
+      "text": "Canadian Space Agency (CSA) Moon Exploration portal, for the educational context on lunar missions. The Chandrayaan-3 site comes from the Indian Space Research Organisation (ISRO) mission.",
+      "url": "https://www.asc-csa.gc.ca/eng/astronomy/moon-exploration/"
+    },
+    {
+      "title": "Use of AI tools",
+      "text": "Parts of the data-processing code were written with AI coding assistants (Claude by Anthropic; Codex by OpenAI) following the team's specification, and reviewed by the team. Results come from fixed rules, not from generative AI.",
+      "url": ""
+    }
+  ],
+  "simplifications": [
+    "Visible means the center of the body is above the horizon.",
+    "Hourly samples with linear interpolation: event times are rounded to the hour.",
+    "Without terrain data, the horizon is a flat 0° line from a smooth sphere.",
+    "No solar panel, battery, antenna or radio link model.",
+    "Requirements are team demonstration assumptions, not NASA criteria.",
+    "Periods outside the data coverage show 'Insufficient data'; values are never extrapolated."
+  ],
+  "general_facts": [
+    "A full day on the Moon (sunrise to sunrise) lasts about 709 hours, or 29.5 Earth days.",
+    "The Moon has no atmosphere: no refraction lifts the Sun near the horizon, so the horizon is set only by terrain and the Moon's curvature.",
+    "The Moon's axis is tilted only about 1.5°, so near the poles the Sun skims the horizon all year and small terrain changes decide between light and darkness."
+  ],
+  "site_facts": {
+    "CR1": {
+      "site_id": "CR1",
+      "facts": [
+        "Here the Sun never climbs more than 2.1° above a flat horizon. Any terrain rising more than 2.1° in its direction would hide it all year.",
+        "Earth rises and sets here because of libration: it is above the horizon 53% of the year, and the longest wait without it is 13.4 days.",
+        "With a flat 0° horizon the Sun would be hidden for 164.6 days in a row. The real terrain seen from 2 m above the ground cuts that to 11.9 days: the Sun is visible 86% of the year instead of 52%.",
+        "This site is 1958 m above the reference sphere. On a perfectly smooth Moon its horizon would sit at -2.7°; the real one is between -2.7° and -0.5°, depending on the direction."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 2.072,
+        "earth_elevation_range_deg": [
+          -7.552,
+          6.214
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "IM2": {
+      "site_id": "IM2",
+      "facts": [
+        "Here the Sun never climbs more than 6.7° above a flat horizon. Any terrain rising more than 6.7° in its direction would hide it all year.",
+        "Earth rises and sets here because of libration: it is above the horizon 81% of the year, and the longest wait without it is 5.7 days.",
+        "Real terrain takes sunlight away here: nearby high ground rises up to 4.1° above a flat horizon, so the Sun is visible 46% of the year instead of the 52% a flat 0° horizon would give.",
+        "This site is 5322 m above the reference sphere. On a perfectly smooth Moon its horizon would sit at -4.5°; the real one is between -1.5° and 4.1°, depending on the direction."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 6.747,
+        "earth_elevation_range_deg": [
+          -2.296,
+          10.788
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "CH3": {
+      "site_id": "CH3",
+      "facts": [
+        "Here the Sun climbs as high as 22.2°, and night lasts about two weeks: the longest stretch without the Sun in the year is 15.4 days.",
+        "Earth never sets here. It only wobbles in the sky (libration): its elevation stays between 11.3° and 22.9° all year."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 22.166,
+        "earth_elevation_range_deg": [
+          11.331,
+          22.918
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "CE4": {
+      "site_id": "CE4",
+      "facts": [
+        "Here the Sun climbs as high as 46.1°, and night lasts about two weeks: the longest stretch without the Sun in the year is 15.0 days.",
+        "Earth never rises here: this is the far side of the Moon. Talking to Earth needs a relay satellite."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 46.071,
+        "earth_elevation_range_deg": [
+          -50.885,
+          -37.719
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "A11": {
+      "site_id": "A11",
+      "facts": [
+        "Here the Sun climbs as high as 89.8°, and night lasts about two weeks: the longest stretch without the Sun in the year is 14.8 days.",
+        "Earth never sets here. It only wobbles in the sky (libration): its elevation stays between 58.0° and 73.7° all year."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 89.768,
+        "earth_elevation_range_deg": [
+          57.964,
+          73.679
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "N2": {
+      "site_id": "N2",
+      "facts": [
+        "Here the Sun never climbs more than 7.5° above a flat horizon. Any terrain rising more than 7.5° in its direction would hide it all year.",
+        "Earth rises and sets here because of libration: it is above the horizon 75% of the year, and the longest wait without it is 7.5 days.",
+        "With a flat 0° horizon the Sun would be hidden for 17.2 days in a row. The real terrain seen from 2 m above the ground cuts that to 15.1 days: the Sun is visible 54% of the year instead of 52%.",
+        "This site is 1470 m above the reference sphere. On a perfectly smooth Moon its horizon would sit at -2.4°; the real one is between -2.5° and 5.6°, depending on the direction."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 7.484,
+        "earth_elevation_range_deg": [
+          -3.509,
+          9.012
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "MM": {
+      "site_id": "MM",
+      "facts": [
+        "Here the Sun never climbs more than 6.1° above a flat horizon. Any terrain rising more than 6.1° in its direction would hide it all year.",
+        "Earth rises and sets here because of libration: it is above the horizon 57% of the year, and the longest wait without it is 12.4 days.",
+        "Real terrain gives more sunlight here: seen from 2 m above the ground, the Sun is visible 72% of the year instead of the 52% a flat 0° horizon would give. The longest stretch without it is still 19.0 days.",
+        "This site is 6388 m above the reference sphere. On a perfectly smooth Moon its horizon would sit at -4.9°; the real one is between -4.9° and 2.9°, depending on the direction."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 6.098,
+        "earth_elevation_range_deg": [
+          -2.994,
+          10.117
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "MA": {
+      "site_id": "MA",
+      "facts": [
+        "Here the Sun never climbs more than 5.6° above a flat horizon. Any terrain rising more than 5.6° in its direction would hide it all year.",
+        "Earth rises and sets here because of libration: it is above the horizon 84% of the year, and the longest wait without it is 5.0 days.",
+        "With a flat 0° horizon the Sun would be hidden for 18.4 days in a row. The real terrain seen from 2 m above the ground cuts that to 11.4 days: the Sun is visible 79% of the year instead of 51%.",
+        "This site is 4962 m above the reference sphere. On a perfectly smooth Moon its horizon would sit at -4.3°; the real one is between -4.8° and 0.8°, depending on the direction."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 5.567,
+        "earth_elevation_range_deg": [
+          -3.123,
+          10.612
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "G2": {
+      "site_id": "G2",
+      "facts": [
+        "Here the Sun never climbs more than 3.1° above a flat horizon. Any terrain rising more than 3.1° in its direction would hide it all year.",
+        "Earth rises and sets here because of libration: it is above the horizon 55% of the year, and the longest wait without it is 12.7 days.",
+        "With a flat 0° horizon the Sun would be hidden for 27.9 days in a row. The real terrain seen from 2 m above the ground cuts that to 13.9 days: the Sun is visible 76% of the year instead of 52%.",
+        "This site is 1580 m above the reference sphere. On a perfectly smooth Moon its horizon would sit at -2.4°; the real one is between -3.6° and 2.5°, depending on the direction."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 3.057,
+        "earth_elevation_range_deg": [
+          -6.706,
+          7.337
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "MP": {
+      "site_id": "MP",
+      "facts": [
+        "Here the Sun never climbs more than 6.1° above a flat horizon. Any terrain rising more than 6.1° in its direction would hide it all year.",
+        "Earth rises and sets here because of libration: it is above the horizon 77% of the year, and the longest wait without it is 7.0 days.",
+        "With a flat 0° horizon the Sun would be hidden for 18.0 days in a row. The real terrain seen from 2 m above the ground cuts that to 16.5 days: the Sun is visible 61% of the year instead of 52%.",
+        "This site is 6186 m above the reference sphere. On a perfectly smooth Moon its horizon would sit at -4.8°; the real one is between -2.9° and 2.7°, depending on the direction."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 6.06,
+        "earth_elevation_range_deg": [
+          -2.941,
+          10.214
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "SP": {
+      "site_id": "SP",
+      "facts": [
+        "Here the Sun never climbs more than 4.3° above a flat horizon. Any terrain rising more than 4.3° in its direction would hide it all year.",
+        "Earth rises and sets here because of libration: it is above the horizon 45% of the year, and the longest wait without it is 15.7 days.",
+        "With a flat 0° horizon the Sun would be hidden for 20.1 days in a row. The real terrain seen from 2 m above the ground cuts that to 14.8 days: the Sun is visible 66% of the year instead of 52%.",
+        "This site is 532 m above the reference sphere. On a perfectly smooth Moon its horizon would sit at -1.4°; the real one is between -2.2° and 0.6°, depending on the direction."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 4.287,
+        "earth_elevation_range_deg": [
+          -8.509,
+          4.658
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "CB": {
+      "site_id": "CB",
+      "facts": [
+        "Here the Sun never climbs more than 7.9° above a flat horizon. Any terrain rising more than 7.9° in its direction would hide it all year.",
+        "Earth rises and sets here because of libration: it is above the horizon 73% of the year, and the longest wait without it is 8.1 days.",
+        "With a flat 0° horizon the Sun would be hidden for 17.0 days in a row. The real terrain seen from 2 m above the ground cuts that to 13.6 days: the Sun is visible 63% of the year instead of 50%.",
+        "This site is 4594 m above the reference sphere. On a perfectly smooth Moon its horizon would sit at -4.2°; the real one is between -4.2° and 0.1°, depending on the direction."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 7.894,
+        "earth_elevation_range_deg": [
+          -5.541,
+          9.624
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "N1": {
+      "site_id": "N1",
+      "facts": [
+        "Here the Sun never climbs more than 6.2° above a flat horizon. Any terrain rising more than 6.2° in its direction would hide it all year.",
+        "Earth rises and sets here because of libration: it is above the horizon 58% of the year, and the longest wait without it is 12.0 days.",
+        "With a flat 0° horizon the Sun would be hidden for 17.8 days in a row. The real terrain seen from 2 m above the ground cuts that to 10.1 days: the Sun is visible 84% of the year instead of 52%.",
+        "This site is 6760 m above the reference sphere. On a perfectly smooth Moon its horizon would sit at -5.0°; the real one is between -5.5° and 2.0°, depending on the direction."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 6.241,
+        "earth_elevation_range_deg": [
+          -3.057,
+          9.96
+        ],
+        "lunar_day_hours": 708.7
+      }
+    },
+    "HW": {
+      "site_id": "HW",
+      "facts": [
+        "Here the Sun never climbs more than 5.1° above a flat horizon. Any terrain rising more than 5.1° in its direction would hide it all year.",
+        "Earth rises and sets here because of libration: it is above the horizon 74% of the year, and the longest wait without it is 7.8 days.",
+        "With a flat 0° horizon the Sun would be hidden for 18.8 days in a row. The real terrain seen from 2 m above the ground cuts that to 14.5 days: the Sun is visible 73% of the year instead of 51%.",
+        "This site is 2842 m above the reference sphere. On a perfectly smooth Moon its horizon would sit at -3.3°; the real one is between -3.5° and 2.2°, depending on the direction."
+      ],
+      "numbers": {
+        "sun_max_elevation_deg": 5.142,
+        "earth_elevation_range_deg": [
+          -3.974,
+          10.072
+        ],
+        "lunar_day_hours": 708.7
+      }
+    }
+  }
+}
