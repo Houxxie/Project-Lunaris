@@ -9,7 +9,7 @@ whether the site meets three example requirements. One click delays the landing 
 
 ## Run it
 
-- **In the browser:** PLAY_LINK
+- **In the browser:** https://houxxie.github.io/Project-Lunaris/
 - **Windows:** download [`downloads/ProtocoloLunaris_windows.zip`](downloads/ProtocoloLunaris_windows.zip),
   extract it and run `ProtocoloLunaris.exe`. Windows may show a warning for unsigned programs:
   choose "More info" and then "Run anyway".
